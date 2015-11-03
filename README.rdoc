@@ -1,5 +1,7 @@
 == README
 
+Hi, my name is Chris. I am currently training to be a web developer with Career Foundry
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
