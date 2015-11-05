@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cfapp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>Cfapp</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+	<meta name="viewport" content="width=device-width" intial-scale="1">
+	<%= csrf_meta_tags %>
 </head>
 <body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid-nav">
+			<div class="row" id="nav-row">
+				<div class="col-sm-8 col-md-6">
+					<div class="navbar-header-a">
+						<a href="#">The Whiteley Collection</a>
+					</div><!--navbar header end-->
+				</div><!--col end-->
+				<div class="col-sm-8 col-md-6">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li><a href="#home"><span class="glyphicon glyphicon-home"></span></a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#faqs">FAQs</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>	
+						</div><!--navbar-collapse collapse end-->
+					</div> <!--navbar header end-->
+				</div><!--col end-->
+			</div><!-- nav row end-->
+		</div><!--container fluid nav end-->
+	</nav><!--nav bar end-->
+	<div class="main-body">
+		<h1>Welcome to the Whiteley Collection</h1>
+		<h2>Handcrafted personalised cards</h2>
+	</div><!--main body end-->
+
+
 
 <%= yield %>
+
+<footer>
+	<div class="row" id="footer-row-1">
+		<div class="col-sm-12 col-md-4">
+			&copy; The Whiteley Collection 2015
+		</div><!--col end-->
+	</div><!--footer row 1 end-->
+</footer>
 
 </body>
 </html>
