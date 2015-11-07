@@ -8,6 +8,7 @@ h1 {
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 26.4px;
+	padding-bottom: 3%;
 }
 h2 {
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
@@ -24,7 +25,14 @@ p {
 	margin-top: 7%;
 	margin-left: 1%;
 }
-.image_tag {
-	float: right;
-
+.img-class {
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 0%;
+	margin-bottom: 5%;
+}
+.general-styles {
+	margin-top: 7%;
+	margin-left: 1%;
+	margin-bottom: 35%;
 }

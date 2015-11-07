@@ -1,39 +1,6 @@
 <div class="main-body">
 	<!--<p>Welcome! The date and the time is <%= Time.now %></p>-->
-		<div class="image-carousel">
-		<div class="container-fluid carousel" id="home">
-			<div class="carousel slide" id="carousel" data-ride="carousel">
-				<!--Indicators-->
-				<ol class="carousel-indicators">
-					<li data-target="#carousel" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel" data-slide-to="1"></li>
-					<li data-target="#carousel" data-slide-to"2"></li>
-				</ol>
+<%= image_tag("shopicon.jpg", :class=> "img-class") %>
 
-				<!--Wrapper for slides-->
-				<div class="carousel-inner" role="list-box">
-					<div class="item active" id="carousel-image-1">
-						<img src="app/assets/images/shopicon.jpg" alt="The Whiteley Collection Logo">
-					</div><!--carousel-image-1 end-->
-					<div class="item" id="carousel-image-2">
-						<img src="app/assets/images/image1.jpg" alt="Example card front">
-					</div><!--carousel image 2 end-->
-					<div class="item" id="carousel-image-3">
-						<img src="app/assets/images/image4.jpg" alt="Example card back">
-					</div><!-- carousel image 3 end-->
-				</div><!--carousel inner end-->
-
-				<!-- Controls -->
-				<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div><!--carousel slide end-->
-		</div><!--container fluid carousel end-->
-	</div><!-- image carousel end-->
 </div><!--main body end-->
 
