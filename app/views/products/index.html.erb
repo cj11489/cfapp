@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="main-body">Listing Products</h1>
+
+<table class="table table-bordered" id="products-table">
+  <thead>
+    <tr class="table-header">
+      <th class="name-column">Name</th>
+      <th class="description-column">Description</th>
+      <th class="image-column">Image url</th>
+      <th class="price-column">Price</th>
+    </tr>
+    <tr>
+      <th class="product1">Birthday Card</th>
+      <th>Create a personalised Birthday Card by selecting the letters of your choice. Up to 7 letters per line.</th>
+      <th><%= image_tag("image2.JPG", :class=> "product-image") %></th>
+      <th>1-3 letters - £2.50 <br> 4-7 letters - £3.00 <br> 8-10 letters £3.50 <br> 11-14 letters - £4.00 </th>
+    </tr>
+    <tr>
+      <th class="product2">Christmas Card</th>
+      <th>For a limited time only, create a personalised Christmas card for loved ones.</th>
+      <th>Image to be added</th>
+      <th>1-3 letters - £2.50 <br> 4-7 letters - £3.00 <br> 8-10 letters £3.50 <br> 11-14 letters - £4.00 </th>
+    </tr>
+    <tr>
+      <th class="product3">Cards for any occasion</th>
+      <th>We can create cards for just about any occasion. Select the letters you would like and we'll do the rest.</th>
+      <th><%= image_tag("image1.JPG", :class=> "product-image") %></th>
+      <th>1-3 letters - £2.50 <br> 4-7 letters - £3.00 <br> 8-10 letters £3.50 <br> 11-14 letters - £4.00 </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.name %></td>
+        <td><%= product.description %></td>
+        <td><%= product.image_url %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>
