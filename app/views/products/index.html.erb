@@ -8,11 +8,11 @@
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="product-container">
             <tr>
-              <td><%= product.name %></td>
-              <td><%= product.description %></td>
-              <td><%= product.image_url %></td>
-              <td><%= product.price %></td>
-              <td><%= product.colour %></td>
+              <td class="product-name"><%= product.name %></td><br><br>
+              <td class="product-description"><%= product.description %></td><br><br>
+              <td><%= product.image_url %></td><br><br>
+              <td class="product-price"><%= product.price %></td><br>
+              <td><%= product.colour %></td><br>
               <td><%= link_to 'Show', product %></td>
               <td><%= link_to 'Edit', edit_product_path(product) %></td>
               <td><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -22,7 +22,7 @@
       <% end %>
     </div><!--row end-->
     <div class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="new-product-container">
           <%= link_to 'New Product', new_product_path %>
         </div><!--new product container end-->
