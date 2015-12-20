@@ -5,10 +5,15 @@
 .products-page h4 {
 	font-size: 1.25em;
 	font-weight: 700;
+	padding-top: 2%;
 }
 
 .products-page p {
 	font-size: 1em;
+}
+
+.products-page hr {
+	border-color: #000;
 }
 
 .container-fluid {
@@ -26,8 +31,13 @@
 	padding-right: 5%;
 	padding-top: 10%;
 	padding-bottom: 10%;
-	height: 500px;
+	height: 525px;
 	margin-bottom: 8%;
+}
+
+.product-price {
+	padding-left: 45%;
+	padding-right: 45%;
 }
 
 .new-product-container {

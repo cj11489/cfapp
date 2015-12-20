@@ -11,9 +11,10 @@
               <div class="product-container">
                   <%= image_tag(product.image_url, class: "img-responsive") %>
                   <h4 class="product-name"><%= product.name %></h4><br>
-                  <p class="product-description"><%= product.description %></p><br>
-                  <p class="product-price"><%= product.price %></p><br>
-                  <p><%= product.colour %></p>
+                  <p class="product-description"><%= product.description %></p>
+                  <hr>
+                  <p class="product-price"><%= product.price %></p>
+                  <hr>
                   <p><%= link_to 'Show', product %>
                   <%= link_to 'Edit', edit_product_path(product) %>
                   <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
