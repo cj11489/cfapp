@@ -43,6 +43,28 @@ p {
 	margin-left: 1%;
 	margin-bottom: 35%;
 }
+.carousel-caption {
+	float: right;
+	width: 650px;
+	color: black;
+	font-size: 3em;
+	margin-left: 25%;
+	line-height: 1em;
+	bottom: 50%;
+}
 #carousel-caption-1 {
 	color: black;
+}
+#landing_page {
+	margin-top: 50px;
+}
+#carousel-image {
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.carousel-inner>.item>img {
+	height: 400px;
+}
+a.carousel-control:hover {
+	background-color: #BB0808;
 }

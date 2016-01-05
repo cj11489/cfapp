@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" id="landing_page">
 	<div id="carousel-example-generic" class="carousel-slide" data-ride="carousel">
 
 		<!--Indicators-->
@@ -10,10 +10,10 @@
 
 		<!--Wrapper for Slides-->
 		<div class="carousel-inner" role="list-box">
-			<%= @products.each do |product| %>
-			<div class="item<%= " active" if product == @products.first %>">
+			<% @products.each do |product| %>
+			<div class="item<%= " active" if product == @products.first %>" id="carousel-image">
 				<%= image_tag(product.image_url) %>
-				<div class="carousel-caption" id="carousel-caption-1">
+				<div class="carousel-caption">
 					<%= product.name %>
 				</div><!--carousel-caption end-->
 			</div><!--item active end-->
