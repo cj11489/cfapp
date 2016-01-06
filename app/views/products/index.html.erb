@@ -6,21 +6,15 @@
 
       <div class="container-fluid">
         <div class="row">
-          <% @products.each do |product| %>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="product-container">
-                  <%= image_tag(product.image_url, class: "img-responsive") %>
-                  <h4 class="product-name"><%= product.name %></h4><br>
-                  <p class="product-description"><%= product.description %></p>
-                  <hr>
-                  <p class="product-price"><%= product.price %></p>
-                  <hr>
-                  <p><%= link_to 'Show', product %>
-                  <%= link_to 'Edit', edit_product_path(product) %>
-                  <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-              </div><!--product container end-->
-            </div><!--col-md-4 end-->
-          <% end %>
+          <%= render partial: "product", collection: @products %> <!--this is a 'partial' its used to tidy up the code and avoid having to retype code. See views/products/_product.html.erb for the full code this partial is rendering. Because @products is a an array of objects of the same model (called a collection in Rails terminology), instead of typing
+          
+             @products.each do |product| 
+              = render product 
+            end
+
+          we can condense this entire block into just one line, where we pass the array directly into the partial using the collection option (see above)
+
+          When the objects of the collection match the name of the partial (in this case product) the code can be shortened further to = render @products --> 
         </div><!--row end-->
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
