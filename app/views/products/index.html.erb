@@ -1,9 +1,9 @@
 <div class="main-body">
-  <div class="products-page">
+  <div class="products-page" id="products">
     <p id="notice"><%= notice %></p>
-
-    <h1>Products</h1>
-
+      <div class="page-header">
+        <h1>Create a card</h1>
+      </div>
       <div class="container-fluid">
         <div class="row">
           <%= render partial: "product", collection: @products %> <!--this is a 'partial' its used to tidy up the code and avoid having to retype code. See views/products/_product.html.erb for the full code this partial is rendering. Because @products is a an array of objects of the same model (called a collection in Rails terminology), instead of typing

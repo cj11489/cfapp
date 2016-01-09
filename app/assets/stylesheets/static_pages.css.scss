@@ -33,10 +33,9 @@ p {
 	margin-bottom: 5%
 }
 .img-class {
-	margin-left: 30%;
-	margin-right: 30%;
-	margin-top: 0%;
-	margin-bottom: 5%;
+	margin-top: 30%;
+	margin-bottom: 10%;
+	padding-left: 10%;
 }
 .general-styles {
 	margin-top: 7%;
@@ -55,8 +54,10 @@ p {
 #carousel-caption-1 {
 	color: black;
 }
-#landing_page {
+#landing_page_carousel {
 	margin-top: 50px;
+	padding-top: 0%;
+	padding-bottom: 0%;
 }
 #carousel-image {
 	padding-left: 8%;
@@ -68,4 +69,38 @@ p {
 }
 a.carousel-control:hover {
 	background-color: #BB0808;
+}
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+#welcome-button {
+	width: 400px;
+	height: 50px;
+}
+.btn {
+	padding-top: 12px; /*other padding is from bootstrap css*/
+}
+.welcome_intro_text {
+	text-align: center;
+	font-family: Optima, calibri, arial, sans-serif
+}
+#welcome_intro {
+	padding-bottom: 0%;
+}
+#icon {
+	padding-bottom: 4%;
+}
+#welcome-button {
+	font-family: Optima, calibri, arial, sans-serif;
+	font-size: 1.25em;
+}
+a.company-name:hover {
+	background-color: #75a8b4;
+	text-decoration: none;
+}
+.rest_of_landing_page {
+	height: 200px;
 }
