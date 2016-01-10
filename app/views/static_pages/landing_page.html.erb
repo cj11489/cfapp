@@ -3,10 +3,9 @@
 
 		<!--Indicators-->
 		<ol class="carousel-indicators">
-			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			<% 0.upto(@products.count) do |i| %>
+				<li data-target="#carousel-example-generic" data-slide-to="<%= i %>" class="active"></li>
+			<% end %>
 		</ol>
 
 		<!--Wrapper for Slides-->
@@ -14,9 +13,9 @@
 			<% @products.each do |product| %>
 			<div class="item<%= " active" if product == @products.first %>" id="carousel-image">
 				<%= image_tag(product.image_url) %>
-				<div class="carousel-caption">
+				<!--<div class="carousel-caption">
 					<%= product.name %>
-				</div><!--carousel-caption end-->
+				</div>--><!--carousel-caption end-->
 			</div><!--item active end-->
 			<% end %>
 		</div><!-- carousel-inner end-->
@@ -31,7 +30,4 @@
           <span class="sr-only">Next</span>
 		</a><!--right carousel-control end-->	
 	</div><!--carousel-example-generic end-->
-	<div class="rest_of_landing_page">
-		<!--Add extra content here-->
-	</div><!--rest of landing page end-->
 </div><!--container fluid end-->

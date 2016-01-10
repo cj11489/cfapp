@@ -12,57 +12,58 @@
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 
-
 	<meta name="viewport" content="width=device-width" intial-scale="1">
 	<%= csrf_meta_tags %>
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container-fluid-nav">
-			<div class="row" id="nav-row">
-				<div class="col-sm-8 col-md-6">
-					<div class="navbar-header-a">
-						<a href="/static_pages/index" class="company-name">The Whiteley Collection</a>
-					</div><!--navbar header end-->
-				</div><!--col end-->
-				<div class="col-sm-8 col-md-6">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<div class="navbar-collapse collapse">
-							<ul class="nav navbar-nav">
-								<li><a href="/static_pages/index"><span class="glyphicon glyphicon-home"></span></a></li>
-								<li><a href="/static_pages/about">About</a></li>
-								<li><a href="/static_pages/faq">FAQs</a></li>
-								<li><a href="/static_pages/contact">Contact</a></li>
-								<li><a href="/products">Create a card</a></li>
-							</ul>	
-						</div><!--navbar-collapse collapse end-->
-					</div> <!--navbar header end-->
-				</div><!--col end-->
-			</div><!-- nav row end-->
-		</div><!--container fluid nav end-->
-	</nav><!--nav bar end-->
-	<!--<div class="main-body">
-		<h1>Welcome to the Whiteley Collection</h1>
-		<h2>Handcrafted personalised cards</h2>
-	</div><!--main body end-->
+	<div class="main-body-div">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid-nav">
+				<div class="row" id="nav-row">
+					<div class="col-sm-8 col-md-6">
+						<div class="navbar-header-a">
+							<a href="/static_pages/index" class="company-name">The Whiteley Collection</a>
+						</div><!--navbar header end-->
+					</div><!--col end-->
+					<div class="col-sm-8 col-md-6">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div class="navbar-collapse collapse">
+								<ul class="nav navbar-nav">
+									<li><a href="/static_pages/index"><span class="glyphicon glyphicon-home"></span></a></li>
+									<li><a href="/static_pages/about">About</a></li>
+									<li><a href="/static_pages/faq">FAQs</a></li>
+									<li><a href="/static_pages/contact">Contact</a></li>
+									<li><a href="/products">Create a card</a></li>
+								</ul>	
+							</div><!--navbar-collapse collapse end-->
+						</div> <!--navbar header end-->
+					</div><!--col end-->
+				</div><!-- nav row end-->
+			</div><!--container fluid nav end-->
+		</nav><!--nav bar end-->
+		<!--<div class="main-body">
+			<h1>Welcome to the Whiteley Collection</h1>
+			<h2>Handcrafted personalised cards</h2>
+		</div><!--main body end-->
 
 
 
 <%= yield %>
 
-<footer>
-	<div class="row" id="footer-row-1">
-		<div class="col-sm-12 col-md-4" id="footer-company-name">
-			&copy; The Whiteley Collection 2015
-		</div><!--col end-->
-	</div><!--footer row 1 end-->
-</footer>
+		<footer>
+			<div class="row" id="footer-row-1">
+				<div class="col-sm-12 col-md-4" id="footer-company-name">
+					&copy; The Whiteley Collection 2015
+				</div><!--col end-->
+			</div><!--footer row 1 end-->
+		</footer>
+	</div><!--main body div end-->
 
 </body>
 </html>

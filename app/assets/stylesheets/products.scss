@@ -26,7 +26,7 @@
 }
 
 .product-container  {
-	background-color: #EDF6FF;
+	background-color: #ededed;
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-top: 10%;
@@ -41,7 +41,7 @@
 }
 
 .new-product-container {
-	background-color: #EDF6FF;
+	background-color: #75a8b4;
 	padding-left: 45%;
 	padding-right: 45%;
 	padding-top: 1.5%;
@@ -54,4 +54,20 @@
 	text-decoration: none;
 	background-color: #EDF6FF;
 }
-
+#show-edit-delete-button {
+	width: 60px;
+	max-height: 35px;
+}
+.show_edit_delete_div {
+	padding-left: 10%;
+}
+#show-edit-delete-button a {
+	font-size: 1em;
+	font-family: optima, calibri, arial, sans-serif;
+	margin-bottom: 6.5px;
+}
+.edit_show_new_products {
+	padding-top: 10%;
+	padding-bottom: 10%;
+	margin-left: -5%;
+}

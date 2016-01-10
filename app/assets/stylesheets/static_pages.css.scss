@@ -33,26 +33,18 @@ p {
 	margin-bottom: 5%
 }
 .img-class {
-	margin-top: 30%;
+	margin-top: 60%;
 	margin-bottom: 10%;
-	padding-left: 10%;
-}
-.general-styles {
-	margin-top: 7%;
-	margin-left: 1%;
-	margin-bottom: 35%;
 }
 .carousel-caption {
-	float: right;
 	width: 650px;
-	color: black;
+	color: #FFF;
 	font-size: 3em;
-	margin-left: 25%;
 	line-height: 1em;
-	bottom: 50%;
+	bottom: 85%;
 }
 #carousel-caption-1 {
-	color: black;
+	color: #000;
 }
 #landing_page_carousel {
 	margin-top: 50px;
@@ -64,11 +56,11 @@ p {
 	padding-right: 8%;
 }
 .carousel-inner>.item>img {
-	height: 400px;
-	width: 550px;
+	height: 600px;
+	padding-left: 30px;
 }
 a.carousel-control:hover {
-	background-color: #BB0808;
+	background-color: #FFF;
 }
 .container-fluid {
 	padding-right: 0;
@@ -77,30 +69,73 @@ a.carousel-control:hover {
 	margin-left: 0;
 }
 #welcome-button {
-	width: 400px;
+	width: 327px;
 	height: 50px;
 }
-.btn {
+#welcome-button {
 	padding-top: 12px; /*other padding is from bootstrap css*/
 }
 .welcome_intro_text {
 	text-align: center;
-	font-family: Optima, calibri, arial, sans-serif
+	font-family: Optima, calibri, arial, sans-serif;
+	font-size: 1.25em;
 }
 #welcome_intro {
 	padding-bottom: 0%;
 }
 #icon {
-	padding-bottom: 4%;
+	padding-bottom: 6%;
 }
 #welcome-button {
 	font-family: Optima, calibri, arial, sans-serif;
 	font-size: 1.25em;
-}
-a.company-name:hover {
-	background-color: #75a8b4;
-	text-decoration: none;
+	background-color: #ededed;
+	color: #000;
 }
 .rest_of_landing_page {
 	height: 200px;
+}
+.welcome_page {
+	height: 320px;
+	width: 100%;
+	background-color: #75a8b4;
+	margin-top: 5%;
+}
+.welcome_section {
+	padding-top: 5%;
+	padding-left: 2%;
+	padding-right: 2%;
+	line-height: 2em;
+}
+.welcome_text {
+	font-family: optima, calibri, arial, sans-serif;
+	font-size: 2em;
+	text-align: center;
+}
+.welcome_text_p {
+	font-family: optima, calibri, arial, sans-serif;
+	font-size: 1em;
+	color: #FFF;
+	line-height: 2em;
+	text-align: center;
+	margin-bottom: 3%;
+}
+.contact_us_styles {
+	margin-bottom: 35%;
+}
+.about_styles {
+	margin-bottom: 35%;
+}
+.panel-default>.panel-heading:hover {
+	background-color: #75a8b4;
+	color: #FFF;
+	-webkit-transition: color 300ms;
+	text-decoration: none;
+}
+.panel-group a {
+	outline: 0;
+	text-decoration: none;
+}
+a:hover {
+	background: none;
 }
