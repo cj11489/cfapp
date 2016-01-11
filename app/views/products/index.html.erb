@@ -6,7 +6,7 @@
       </div>
       <div class="container-fluid">
         <div class="row">
-          <%= render partial: "product", collection: @products %> <!--this is a 'partial' its used to tidy up the code and avoid having to retype code. See views/products/_product.html.erb for the full code this partial is rendering. Because @products is a an array of objects of the same model (called a collection in Rails terminology), instead of typing
+          <%= render partial: "product", collection: @products %> <!--this is a 'partial' its used to tidy up the code to consolidate long bits of code into smaller pieces and avoid having to retype code. See views/products/_product.html.erb for the full code this partial is rendering. Because @products is a an array of objects of the same model (called a collection in Rails terminology), instead of typing
           
              @products.each do |product| 
               = render product 
