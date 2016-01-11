@@ -96,7 +96,7 @@ a.carousel-control:hover {
 	height: 200px;
 }
 .welcome_page {
-	height: 320px;
+	height: 360px;
 	width: 100%;
 	background-color: #75a8b4;
 	margin-top: 5%;
@@ -114,11 +114,12 @@ a.carousel-control:hover {
 }
 .welcome_text_p {
 	font-family: optima, calibri, arial, sans-serif;
-	font-size: 1em;
+	font-size: 1.15em;
 	color: #FFF;
 	line-height: 2em;
 	text-align: center;
-	margin-bottom: 3%;
+	padding-bottom: 3%;
+	padding-top: 2%;
 }
 .contact_us_styles {
 	margin-bottom: 35%;
