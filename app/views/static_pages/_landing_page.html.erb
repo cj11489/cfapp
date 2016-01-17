@@ -1,14 +1,20 @@
 <!--Indicators-->
 		<ol class="carousel-indicators">
-			<% 0.upto(@products.count) do |i| %>
-				<li data-target="#carousel-example-generic" data-slide-to="<%= i %>" class="active"></li>
+			<%= puts products.count %>
+			<% products.count.times do |i| %>
+				<%= puts i %>
+				<% if i == 0 %>
+				    <li data-target="#carousel-example-generic" data-slide-to="<%= i %>" class="active"></li>
+				<% else %>
+				   	<li data-target="#carousel-example-generic" data-slide-to="<%= i %>"></li>
+				<% end %>
 			<% end %>
 		</ol>
 
 		<!--Wrapper for Slides-->
 		<div class="carousel-inner" role="list-box">
-			<% @products.each do |product| %>
-			<div class="item<%= " active" if product == @products.first %>" id="carousel-image">
+			<% products.each do |product| %>
+			<div class="item<%= " active" if product == products.first %>" id="carousel-image">
 				<%= image_tag(product.image_url) %>
 				<!--<div class="carousel-caption">
 					<%= product.name %>
