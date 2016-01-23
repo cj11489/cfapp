@@ -1,0 +1,15 @@
+/*Edit / Create pages*/
+
+
+/*Search bar*/
+.search_bar {
+	float: right;
+	margin-bottom: 2%;
+}
+#edit_new_page .form-control {
+	width: 100%;
+}
+#edit_new_page .actions>.btn {
+	width: 100px;
+	background-color: #ededed;
+}
