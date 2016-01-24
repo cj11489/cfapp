@@ -1,8 +1,14 @@
 <!--<p>Welcome! The date and the time is <%= Time.now %></p>-->
+<div class="search_bar">
+	<%= form_tag("/products", method: "get", :class=> "navbar-form") do %>
+		<%= text_field_tag(:q, "", class: "form-control", placeholder: "Find a product") %>
+		<%= submit_tag("Search", class: "btn btn-default") %>
+	<% end %>
+</div><!--search bar end-->
 <div class="welcome_page_top">
 	<div class="row" id="welcome-button-row">
 		<div class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-12" id="icon">
-			<%= image_tag("shopicon_crop.jpg", :class=> "img-class") %>
+			<p class="company_logo_img"><%= image_tag("shopicon_crop.jpg", :class=> "img-class") %></p>
 			<p class="welcome_intro_text">Personalised animal cards, designed to make loved ones smile</p>
 		</div><!--image_tag col-md-4 end-->
 		<div class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-12">
@@ -22,7 +28,7 @@ So to make someone you love smile, simply choose their name or a short message s
 	</div><!--welcome section end-->
 
 	<div class="see_our_products_row">
-		<div class="col-md-offset-4 col-md-4 col-sm-12">
+		<div class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-12">
 			<a href="/static_pages/landing_page"<button type="button" class="btn btn-default" id="welcome-button">See our latest cards</button></a>
 		</div><!--col-md-4 col-sm-12 end-->
 	</div><!--enter site row end-->

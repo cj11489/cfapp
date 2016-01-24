@@ -36,9 +36,8 @@ p {
 	margin-top: 60%;
 	margin-bottom: 10%;
 }
-img.center {
-    display: block;
-    margin: 0 auto;
+.company_logo_img {
+	text-align: center;
 }
 .carousel-caption {
 	width: 650px;
@@ -72,8 +71,11 @@ a.carousel-control:hover {
 	margin-right: 0;
 	margin-left: 0;
 }
+.carousel_images {
+	text-align: center;
+}
 .welcome_page_top {
-	margin-top: 5%;
+	margin-top: 50px;
 }
 #welcome-button {
 	width: 327px;
@@ -81,6 +83,9 @@ a.carousel-control:hover {
 }
 #welcome-button {
 	padding-top: 12px; /*other padding is from bootstrap css*/
+}
+.col-lg-offset-4 {
+	text-align: center;
 }
 .welcome_intro_text {
 	text-align: center;
@@ -146,4 +151,16 @@ a.carousel-control:hover {
 }
 a:hover {
 	background: none;
+}
+
+/*Media Queries*/
+@media screen and (min-width: 1800px) {
+	.welcome_page {
+		height: 500px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.welcome_page {
+		height: 500px;
+	}
 }

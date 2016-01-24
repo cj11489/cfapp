@@ -48,12 +48,6 @@
 				</div><!-- nav row end-->
 			</div><!--container fluid nav end-->
 		</nav><!--nav bar end-->
-		<div class="search_bar">
-			<%= form_tag("/products", method: "get", :class=> "navbar-form") do %>
-				<%= text_field_tag(:q, "", class: "form-control", placeholder: "Find a product") %>
-				<%= submit_tag("Search", class: "btn btn-default") %>
-			<% end %>
-		</div><!--search bar end-->
 
 <%= yield %>
 
