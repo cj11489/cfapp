@@ -3,7 +3,28 @@
 		<div class="page-header">
 			<h1>Contact Us</h1>
 		</div>
-		<p>You can't contact us at the moment as we are still getting set up.</p>
-		<p>As soon as we are up and running we will provide contact details</p>
+
+		<!--Contact Form-->
+		<%= flash[:notice] %>
+
+		<%= form_tag("/static_pages/thank_you") do %>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<%= label_tag :name, "Name" %>
+					<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+				</div>
+				<div class="form-group">
+					<%= label_tag :email, "Email" %>
+					<%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email Address" %>
+				</div>
+				<div class="form-group">
+					<%= label_tag :message, "Message" %>
+					<%= text_area_tag :message, nil, class: " form-control", placeholder: "Enter Message" %>
+				</div>
+			</div><!--col-md-4 end-->
+		</div><!--row end-->
+		<%= submit_tag "Send" %>
+		<% end %>
 	</div><!--contact_us_styles end-->
 </div><!--general styles end-->
