@@ -17,7 +17,7 @@
  	background-image: url("Optimized-ricepaper2.png");
  }
 .general_page_styles{
-	padding-top: 10%;
+	padding-top: 5%;
 	padding-left: 2%;
 	padding-right: 2%;
 
@@ -44,8 +44,11 @@
 	letter-spacing: 0.1em;
 	border: none;
 }
+.pull-right {
+	display: inline-flex;
+}
 .navbar-header-a {
-	margin-top: 3%;
+	margin-top: 15px;
 	margin-left: 1%;
 }
 .navbar-header-a a {
@@ -58,6 +61,19 @@
 .navbar-inverse .navbar-nav>li>a {
 	opacity: 1;
 	color: #FFF;
+}
+.nav>li>a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #FFF;
+}
+.nav>li>a:hover {
+	height: 50px;
+	background-color: #FFF;
+	color: #000;
+}
+.glyphicon.glyphicon-earphone {
+	font-size: 1.25em;
 }
 a.company-name:hover {
 	background-color: #75a8b4;

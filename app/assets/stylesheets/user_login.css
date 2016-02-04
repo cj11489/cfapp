@@ -1,0 +1,33 @@
+.login_logout_form {
+	width: 40%;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.form-signin-heading {
+	font-style: normal;
+	font-weight: 600;
+}
+
+.btn-block {
+	background-color: #ededed;
+	border: #ededed;
+	color: #000;
+}
+
+.bth-primary:hover {
+	background-color: #75a8b4;
+}
+
+#login_logout {
+	height: 50px;
+}
+
+a:hover {
+	color: #000;
+	font-style: underline;
+}
+
+#login_logout_notice {
+	margin-top: 50px;
+}
