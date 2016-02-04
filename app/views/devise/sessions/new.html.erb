@@ -1,7 +1,7 @@
 <div class="general_page_styles">
   <div class="login_logout_form">    
     <h2 class="form-signin-heading">Log in</h2>
-
+    logger.info resource
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field">
         <%= f.email_field :email, autofocus: true, class: "form-control", id: "login_logout", placeholder: "Email Address" %>
