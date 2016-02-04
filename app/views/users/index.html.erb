@@ -6,7 +6,7 @@
   </div>
 
   <div class="container-fluid">
-    <%= render partial: "users", collection: @users %>
+    <%= render partial: "users", locals: {users: @users} %>
   </div><!--container fluid end-->
 
   <br>
