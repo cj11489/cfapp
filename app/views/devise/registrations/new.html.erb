@@ -6,6 +6,14 @@
       <%= devise_error_messages! %>
 
       <div class="field">
+        <%= f.text_field :first_name, autofocus: true, class: "form-control", id: "login_logout", placeholder: "Enter your first name" %>
+      </div>
+
+      <div class="field">
+        <%= f.text_field :last_name, autofocus: true, class: "form-control", id: "login_logout", placeholder: "Enter your last name" %>
+      </div>
+
+      <div class="field">
         <%= f.email_field :email, autofocus: true, class: "form-control", id: "login_logout", placeholder: "Enter your email address" %>
       </div>
 

@@ -60,8 +60,18 @@
 				</div><!-- nav row end-->
 			</div><!--container fluid nav end-->
 		</nav><!--nav bar end-->
-		<p class="notice" id="login_logout_notice"><%= notice %></p>
-
+		<div class="messages">
+			<% if notice %>
+				<div class="alert alert-info alert-dismissible" id="login_logout_notice" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><%= notice %>
+				</div>
+			<% end %>
+			<% if alert %>
+				<div class="alert alert-danger alert-dismissible" id="access_denied_alert" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><%= alert %>
+				</div>
+			<% end %>
+		</div><!--messages end-->
 <%= yield %>
 
 		<footer>

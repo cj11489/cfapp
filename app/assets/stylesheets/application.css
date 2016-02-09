@@ -16,6 +16,19 @@
  body {
  	background-image: url("Optimized-ricepaper2.png");
  }
+.messages {
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 60px;
+
+}
+.alert {
+	padding: 25px;
+	margin-top: 30px;
+	font-family: calibri, sans-serif;
+	font-size: 1.25em;
+	text-align: center;
+ }
 .general_page_styles{
 	padding-top: 5%;
 	padding-left: 2%;
@@ -68,7 +81,7 @@
 	color: #FFF;
 }
 .nav>li>a:hover {
-	height: 50px;
+	height: 51px;
 	background-color: #FFF;
 	color: #000;
 }

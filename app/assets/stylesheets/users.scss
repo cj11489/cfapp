@@ -19,6 +19,19 @@
 	padding-bottom: 0%;
 	height: 50px;
 }
-.new-user-container a {
-	color: #FFF;
+.new-user-button .btn {
+	background-color: #75a8b4;
+	width: 60%;
+	margin: 0 auto;
+	height: 50px;
+	margin-bottom: 15px;
+}
+.new-user-button a {
+	color: #000;
+}
+.new-user-button a:hover {
+	text-decoration: none;
+}
+.new-user-button .btn:hover {
+	background-color: #ededed;
 }
