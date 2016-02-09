@@ -4,6 +4,7 @@ class StaticPagesController < ApplicationController
 		@products = Product.all
 		max_count = [@products.count, 5].min
 		@products = @products.take(max_count)
+		@products = Product.limit(4)
 	end
 	def thank_you
 		@name = params[:name]

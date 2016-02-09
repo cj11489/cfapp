@@ -54,4 +54,8 @@ group :production do
 	gem 'pg'
 end
 
+# gem devise
 gem 'devise'
+
+# gem cancancan
+gem 'cancancan'
