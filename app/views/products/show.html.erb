@@ -3,13 +3,17 @@
 		<p id="notice"><%= notice %></p>
 
 		<div class="row">
-			<div class="col-sm-12 col-md-offset-3 col-md-6 col-offset-3 col-lg-6">
+			<div class="col-sm-12 col-md-4 col-lg-4">
 				<div class="thumbnail">
 					<%= image_tag(@product.image_url, class: "img-responsive") %>
 				</div>
+			</div><!--col md end-->
+			<div class="col-sm-12 col-md-8 col-lg-8">
 				<div class="product_name">
-					<h4><strong><%= @product.name %></strong></h4> <hr>
+					<h4><strong><%= @product.name %></strong></h4>
+					<p>Average Rating: <div class="rated" data-score="<%=@product.average_rating %>"></div></p> <hr>
 				</div>
+
 
 				<div class="product_description">
 				 	<%= @product.description %><hr>
@@ -18,6 +22,16 @@
 				<div class="product_price">
 					<h5><strong><%= @product.price %></strong></h5>
 				</div><br>
+			</div><!--col md end-->
+		</div><!--row end-->
+
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12"
+				
+				<%= render partial: "new_comment" %>
+
+				<%= render partial: "comments" %>
+
 
 				<button class="btn btn-lg btn-primary btn-block"><%= link_to 'Edit', edit_product_path(@product) %>
 				</button>
