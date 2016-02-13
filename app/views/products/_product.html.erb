@@ -7,9 +7,9 @@
       <p class="product-price"><%= product.price %></p>
       <hr>
       <div class="show_edit_delete_div">
-        <button type="button" class="btn btn-default" id="show-edit-delete-button"><%= link_to 'Show', product %></button>
-        <button type="button" class="btn btn-default" id="show-edit-delete-button"><%= link_to 'Edit', edit_product_path(product) %></button>
-        <button type="button" class="btn btn-default" id="show-edit-delete-button"><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+       <%= link_to 'Show', product, :type => 'button', :class => 'btn btn-default' %>
+        <%= link_to 'Edit', edit_product_path(product), :type => 'button', :class => 'btn btn-default' %>
+        <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' }, :type => 'button', :class => 'btn btn-default' %>
       </div><!--show edit delete div end-->
   </div><!--product container end-->
 </div><!--col-md-4 end-->
