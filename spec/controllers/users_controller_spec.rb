@@ -30,7 +30,7 @@ describe UsersController, :type => :controller do
 			@user2 = FactoryGirl.create(:user)
 		end
 
-		context "Logged in user cannot access other users details" do
+		context "Logged in user cannot access other users details page" do
 			before do
 				sign_in @user2
 			end
