@@ -22,6 +22,10 @@
 				<div class="product_price">
 					<h5><strong><%= @product.price %></strong></h5>
 				</div><br>
+
+				<%= form_tag "/payments/create" do %>
+				  <%= render partial: "devise/shared/stripe_checkout_button" %>
+				<% end %>
 			</div><!--col md end-->
 		</div><!--row end-->
 

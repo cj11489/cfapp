@@ -75,3 +75,6 @@ gem 'cancancan'
 
 # gem paginate
 gem 'will_paginate', '~> 3.0.6'
+
+#stripe payment system gem
+gem 'stripe'
