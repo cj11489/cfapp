@@ -24,6 +24,7 @@
 				</div><br>
 
 				<%= form_tag "/payments/create" do %>
+					<%= hidden_field_tag :product_id, @product.id %>
 				  <%= render partial: "devise/shared/stripe_checkout_button" %>
 				<% end %>
 			</div><!--col md end-->
