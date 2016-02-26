@@ -67,14 +67,8 @@ group :production do
 	gem 'pg'
 end
 
-# gem devise
 gem 'devise'
-
-# gem cancancan
 gem 'cancancan'
-
-# gem paginate
 gem 'will_paginate', '~> 3.0.6'
-
-#stripe payment system gem
 gem 'stripe'
+gem 'brakeman'

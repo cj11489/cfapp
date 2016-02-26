@@ -1,4 +1,7 @@
 class PaymentsController < ApplicationController
+	def show
+	end
+
 	def create
 		@product = Product.find(params[:product_id])
 		@user = current_user
@@ -29,6 +32,6 @@ class PaymentsController < ApplicationController
 			flash[:error] = "Sorry, but there was an error processing your payment: #{err[:message]}"
 		end
 
-		redirect_to product_path(@product)
+		redirect_to :show	
 	end
 end

@@ -1,0 +1,56 @@
+SECURITY AUDIT - THE WHITELEY COLLECTION 25.02.2016
+
+Ran Brakeman on my app and it displayed the following results:
+
++-------------------+-------+\
+| Controllers       | 8     |\
+| Models            | 5     |\
+| Templates         | 41    |\
+| Errors            | 0     |\
+| Security Warnings | 1 (0) |\
++-------------------+-------+\
+\
++-------------------+-------+\
+| Warning Type      | Total |\
++-------------------+-------+\
+| Denial of Service | 1     |\
++-------------------+-------+\
+
+
+SECURITY WARNINGS
+
++------------+-------+--------+-------------------+--------------------------->>\
+| Confidence | Class | Method | Warning Type      | Message                   >>\
++------------+-------+--------+-------------------+--------------------------->>\
+| Medium     |       |        | Denial of Service | Rails 4.2.4 is vulnerable >>\
++------------+-------+--------+-------------------+--------------------------->>\
+
+The only warning referred to the version of rails being used. 
+
+
+I also tested the following:
+
+
+SQL injection attack
+
+
+I entered ' OR 1 -- into the search bar, but instead of bringing back all products as this piece of code should do, it returned nothing which is what we want. 
+
+
+
+Brute Force Attack
+
+I created a test user and attempted to log into the account using an incorrect password. I attempted the password at least 15 times. Although I did not successfully get in, there was also nothing that limited me to a certain number of attempts. 
+
+It would be advisable to add in a gem that would limit the number of incorrect attempts. 
+
+
+
+Session Hijacking
+
+
+I tested to see if a user session expires after a certain period of time or period of inactivity by leaving my test user logged in overnight and most of the next morning. When I came back to check, the user was still logged in. 
+
+In response to this, I will look to implement a session expiry time limit that limits user sessions to 1 hour before having to log in again. 
+
+In order to prevent someone from hijacking user information by intercepting cookies over an insecure network, I have added config.force_ssl = true to my application config production.rb file. This will force my app to provide a secure connection over SSL. 
