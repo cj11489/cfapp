@@ -1,7 +1,7 @@
 <div class-"reviews">
 	<% if signed_in? %>
 	  <h4>Leave a review:</h4>
-	  <%= form_for([@product, @product.comments.build]) do |f| %>
+	  <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
 	    <p>
 	      <%= f.text_area :body, class:"form-control", id:"comment_area", placeholder:"Write a comment here"%>
 	    </p>
