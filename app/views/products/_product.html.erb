@@ -1,4 +1,7 @@
 <div class="col-md-4 col-sm-6 col-xs-12">
+
+<% cache product do %>
+
   <div class="product-container">
       <%= image_tag(product.image_url, class: "img-responsive") %>
       <h4 class="product-name"><%= product.name %></h4><br>
@@ -13,3 +16,5 @@
       </div><!--show edit delete div end-->
   </div><!--product container end-->
 </div><!--col-md-4 end-->
+
+<% end %>
