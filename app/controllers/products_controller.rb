@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  respond_to :json, :html
 
   # GET /products
   # GET /products.json
@@ -7,10 +8,10 @@ class ProductsController < ApplicationController
     if params[:q]
       search_term = params[:q]
       @products = Product.where("name LIKE ?", "%#{search_term}%")
-      logger.debug @products.to_a
     else  
       @products = Product.all
     end
+    response_with @products
   end
 
   # GET /products/1
