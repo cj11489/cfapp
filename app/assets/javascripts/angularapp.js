@@ -4,7 +4,7 @@ $(document).on('ready page:load', function () {
 	angular.bootstrap(document.body, ['shop'])
 });
 
-app.factory('models', ['$resource' function($resource){
+app.factory('models', ['$resource', function($resource){
 	var orders_model = $resource("/orders/:id.json", {id: "@id"});
 	var products_model = $resource("/products/:id.json", {id: "@id"});
 	
@@ -15,7 +15,7 @@ app.factory('models', ['$resource' function($resource){
 	return x;
 }]);
 
-app.controller('OrdersCtrl', ['$scope', 'models' function($scope, models){
+app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models){
 	$scope.orders = models.orders.query();
 	$scope.products = models.products.query()
 
