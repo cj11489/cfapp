@@ -6,4 +6,7 @@ class UserMailerPreview < ActionMailer::Preview
   	def welcome
   		UserMailer.welcome("cjoiner20@hotmail.co.uk")
   	end
+  	def order
+  		UserMailer.order("cjoiner20@hotmail.co.uk")
+  	end
 end

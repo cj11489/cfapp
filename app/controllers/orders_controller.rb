@@ -20,6 +20,7 @@ class OrdersController < ApplicationController
 	def create
     @order = Order.create(order_params)
     respond_with @order
+    UserMailer.order(@user).deliver
 	end
 
 	def destroy

@@ -1,4 +1,5 @@
 class PaymentsController < ApplicationController
+
 	def show
 	end
 
@@ -32,6 +33,6 @@ class PaymentsController < ApplicationController
 			flash[:error] = "Sorry, but there was an error processing your payment: #{err[:message]}"
 		end
 
-		redirect_to :show	
+		redirect_to :action => 'show'	
 	end
 end
