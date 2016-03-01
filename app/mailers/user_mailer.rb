@@ -16,8 +16,9 @@ class UserMailer < ApplicationMailer
 	end
 
 	def welcome(user)
+		@user = user
+		@url = "https://thewhiteleycollection.herokuapp.com"
 		@appname = "The Whiteley Collection"
-		mail( :to => user.email,
-			:subject => "Welcome to #{@appname}")
+		mail( :to => user.email, :subject => "Welcome to #{@appname}")
 	end
 end
