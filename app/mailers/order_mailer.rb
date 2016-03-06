@@ -6,7 +6,7 @@ class OrderMailer < ApplicationMailer
 		@order = order
 		@appname = "The Whiteley Collection"
 		@order_url = "https://thewhiteleycollection.herokuapp.com/products"
-		mail( :to => @user.email, :subject => "Thank you for ordering from The Whiteley Colletion!")
+		mail( :to => @user.email, :subject => "Thank you for ordering from The Whiteley Collection!")
 	end
 
 end

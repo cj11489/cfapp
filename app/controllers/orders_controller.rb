@@ -19,7 +19,7 @@ class OrdersController < ApplicationController
 
 	def create
 	@product = Product.find(params[:product_id]
-	@order = Order.create(total: @product.price)
+	@order = Order.create(:total => @product.price)
 	@order.product = @product
 	@order.user = current_user
 	@order.save
