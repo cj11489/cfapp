@@ -18,9 +18,12 @@ class OrdersController < ApplicationController
 	end
 
 	def create
-    @order = Order.create(order_params)
-    respond_with @order
-    UserMailer.order(@user).deliver
+	@product = Product.find(params[:product_id]
+	@order = Order.create(total: @product.price)
+	@order.product = @product
+	@order.user = current_user
+	@order.save
+	respond_with @order
 	end
 
 	def destroy
