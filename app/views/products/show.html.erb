@@ -27,7 +27,11 @@
 
 				<%= form_tag "/payments/create" do %>
 					<%= hidden_field_tag :product_id, @product.id %>
-				  <%= render partial: "devise/shared/stripe_checkout_button", style: "margin-left: 185px" %>
+					<% if user_signed_in? %>
+				  		<%= render partial: "devise/shared/stripe_checkout_button", style: "margin-left: 185px" %>
+				  	<% else %>
+				  		<%= link_to "Please log in to buy this card", new_session_path(:user), :type => 'button', :class => 'btn btn-primary btn-block' %>
+				  	<% end %>
 				<% end %>
 			</div><!--col md end-->
 		</div><!--row end-->
