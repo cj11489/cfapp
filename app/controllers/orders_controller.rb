@@ -10,20 +10,20 @@ class OrdersController < ApplicationController
 	end
 
 	def show
-    @order = Order.find(params[:id]).to_json(:include => [{:product => {:only => :name}}, {:user => {:only => :email}}])
-    respond_with @order		
+	    @order = Order.find(params[:id]).to_json(:include => [{:product => {:only => :name}}, {:user => {:only => :email}}])
+	    respond_with @order		
 	end
 
 	def new
 	end
 
 	def create
-	@product = Product.find(params[:product_id]
-	@order = Order.create(:total => @product.price)
-	@order.product = @product
-	@order.user = current_user
-	@order.save
-	respond_with @order
+		@product = Product.find(params[:product_id])
+		@order = Order.create(total: @product.price)
+		@order.product = @product
+		@order.user = current_user
+		@order.save
+		respond_with @order
 	end
 
 	def destroy
