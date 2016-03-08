@@ -78,7 +78,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #session hijacking prevention
-  config.force_ssl = true
+  config.force_ssl = false
 
   # Dalli - caching
   config.cache_store = :dalli_store,
