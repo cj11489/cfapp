@@ -1,16 +1,26 @@
-<div class="general_page_styles">
-	<div class="landing_page_styles" id="about">
-		<div class="landing-page-header">
-			<h1>Check out our latest cards!</h1>
-		</div>
-	</div>
+<div class="mainContent">
+  <div class="content">
+    <article class="topContent" id="landing_page">
+      <div class="page_top">
+        <div class="row" id="page-top-row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="icon">
+			<div class="landing_page_styles" id="about">
+				<div class="page-header">
+					<h1>Check out our latest cards!</h1>
+				</div>
+			</div>
+			<div class="container-fluid carousel" id="landing_page_carousel">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+
+					<%= render partial: "landing_page", locals: { products: @products } %>
+
+
+				</div><!--carousel-example-generic end-->
+			</div><!--container fluid end-->
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
 </div>
-<div class="container-fluid carousel" id="landing_page_carousel">
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-
-		<%= render partial: "landing_page", locals: { products: @products } %>
-
-
-	</div><!--carousel-example-generic end-->
-</div><!--container fluid end-->

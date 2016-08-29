@@ -6,6 +6,13 @@
 	width: 100%;
 	line-height: 2em;
 }
+tr {
+	border-bottom: solid 1px black ;
+}
+.users_table td {
+	padding-bottom: 10%;
+	max-width: 150px;
+}
 .new-user-container {
 	background-color: #75a8b4;
 	padding-left: 40%;
@@ -31,4 +38,10 @@
 }
 .new-user-button .btn:hover {
 	background-color: #ededed;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 320px) {
+	td {
+	font-size: 10px;
+}
 }

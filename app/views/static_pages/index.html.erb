@@ -1,35 +1,36 @@
-<!--<p>Welcome! The date and the time is <%= Time.now %></p>-->
-<div class="search_bar">
-	<%= form_tag("/products", method: "get", :class=> "navbar-form") do %>
-		<%= text_field_tag(:q, "", class: "form-control selector", placeholder: "Find a product") %>
-		<%= submit_tag("Search", class: "btn btn-default") %>
-	<% end %>
-</div><!--search bar end-->
-<div class="welcome_page_top">
-	<div class="row" id="welcome-button-row">
-		<div class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-12" id="icon">
-			<p class="company_logo_img"><%= image_tag("shopicon_crop.jpg", :class=> "img-class") %></p>
-			<p class="welcome_intro_text">Personalised animal cards, designed to make loved ones smile</p>
-		</div><!--image_tag col-md-4 end-->
-		<div class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-12">
-			<a href="#welcome"<button type="button" class="btn btn-default" id="welcome-button">Welcome</button></a>
-		</div><!--col-md-4 col-sm-12 end-->
-	</div><!--welcome button row end-->
-</div><!--welcome page top end-->
-<div class="welcome_page">
-	<div class="welcome_section" id="welcome">
-		<h3 class="welcome_text">Welcome to the Whiteley Collection</h3> 
-		<p class="welcome_text_p">The Whiteley Collection is a bespoke card shop where each card is made to order. 
+<div class="mainContent">
+	<div class="content">
+		<article class="topContent">
+			<div class="page_top">
+				<div class="row" id="page-top-row">
+					<div class="col-lg-offset-4 col-lg-4 col-md-offset-2 col-md-8 col-sm-12 col-xs-12" id="icon">
+						<p class="company_logo_img"><%= image_tag("shopicon_crop.jpg", :class=> "img-class") %></p>
+						<p class="welcome_intro_text">Personalised animal cards, designed to make loved ones smile</p>
+					</div><!--image_tag col-md-4 end-->
+					<div class="col-lg-offset-4 col-lg-4 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+						<a href="#welcome"<button type="button" class="btn btn-default" id="welcome-button">Welcome</button></a>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="bottomContent">
+			<div class="welcome_page">
+				<div class="welcome_section" id="welcome">
+					<h3 class="welcome_text">Welcome to the Whiteley Collection</h3> 
+					<p class="welcome_text_p">The Whiteley Collection is a bespoke card shop where each card is made to order. 
 
-Fun, bright letters spell out the word of your choice to make your loved one smile. 
+			Fun, bright letters spell out the word of your choice to make your loved one smile. 
 
-Each letter has been hand drawn, with an animal starting with the same letter perching on, swooping through, climbing around or sitting next to it. The cards are left blank inside so that you can write your own message.  
-So to make someone you love smile, simply choose their name or a short message such as 'Good Luck', 'Get Well', 'Well Done' or 'Love You' and let us do the rest!<p>
-	</div><!--welcome section end-->
+			Each letter has been hand drawn, with an animal starting with the same letter perching on, swooping through, climbing around or sitting next to it. The cards are left blank inside so that you can write your own message.  
+			So to make someone you love smile, simply choose their name or a short message such as 'Good Luck', 'Get Well', 'Well Done' or 'Love You' and let us do the rest!<p>
+				</div>
 
-	<div class="see_our_products_row">
-		<div class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-12">
-			<a href="/static_pages/landing_page"<button type="button" class="btn btn-default" id="welcome-button">See our latest cards</button></a>
-		</div><!--col-md-4 col-sm-12 end-->
-	</div><!--enter site row end-->
-</div><!--welcome page end-->
+				<div class="see_our_products_row">
+					<div class="col-lg-offset-4 col-lg-4 col-md-offset-2 col-md-8 col-sm-12">
+						<a href="/static_pages/landing_page"<button type="button" class="btn btn-default" id="welcome-button">See our latest cards</button></a>
+					</div>
+				</div>
+			</div>
+		</article>
+	</div>
+</div>

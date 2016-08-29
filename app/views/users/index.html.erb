@@ -1,12 +1,21 @@
-<div class="general_page_styles">
-  <p id="notice"><%= notice %></p>
+<div class="mainContent">
+  <div class="content">
+    <article class="topContent" id="users">
+      <div class="page_top">
+        <div class="row" id="page-top-row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="icon">
+			  <p id="notice"><%= notice %></p>
 
-  <div class="page-header">
-    <h1>Users</h1>
+			  <div class="page-header">
+			    <h1>Users</h1>
+			  </div>
+
+			  <div class="container-fluid">
+			    <%= render partial: "users" %>
+			  </div><!--container fluid end-->
+          </div>
+        </div>
+      </div>
+    </article>
   </div>
-
-  <div class="container-fluid">
-    <%= render partial: "users" %>
-  </div><!--container fluid end-->
-
-</div><!--general page styles end-->
+</div>

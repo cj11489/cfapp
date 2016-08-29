@@ -16,7 +16,7 @@
 	border-color: #000;
 }
 
-.container-fluid {
+#products.container-fluid {
 	padding: 2%;
 }
 
@@ -91,6 +91,8 @@ textarea.form-control#comment_area {
 }
 .product-reviews {
 	margin-bottom: 25px;
+	margin-left: 2%;
+	margin-right: 2%;
 }
 #review_button {
 	margin-top: 10px;
@@ -103,4 +105,14 @@ textarea.form-control#comment_area {
 	text-align: center;
 	color: #75a8b4;
 	font-family: calibri, sans-serif;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 414px) {
+	.product-reviews {
+	margin-left: 5%;
+	margin-right: 5%;
+	}
+	.edit_show_new_products h1{
+		font-size: 2.5em;
+	}
 }

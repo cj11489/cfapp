@@ -28,6 +28,24 @@ a:hover {
 	font-style: underline;
 }
 
-#login_logout_notice {
-	margin-top: 50px;
+
+
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+	.login_logout_form {
+	width: 80%;
+	padding-top: 5%;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 414px) {
+	.login_logout_form {
+	width: 100%;
+	padding-top: 5%;
+	}
+	.form-control {
+		width: 100%;
+	}
+	#unlock-btn,#reset_btn.btn-block {
+	font-size: 0.75em;
+	}
 }

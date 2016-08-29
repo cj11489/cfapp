@@ -13,90 +13,75 @@
  *= require_tree .
  *= require_self
  */
+
  body {
  	background-image: url("Optimized-ricepaper2.png");
  }
-.messages {
-	width: 60%;
-	margin: 0 auto;
-	padding-top: 60px;
 
-}
-.alert {
-	padding: 25px;
-	margin-top: 30px;
-	font-family: calibri, sans-serif;
-	font-size: 1.25em;
-	text-align: center;
- }
-.general_page_styles{
-	padding-top: 5%;
-	padding-left: 2%;
-	padding-right: 2%;
-
-}
 .main-body {
 	margin-left: 0%;
 }
 .main-body-div {
-	width: 80%;
-	margin-left: 10%;
+	width: 85%;
+	margin-left: 7.5%;
 	background-color: #FFF;
 }
+
 .navbar {
-	position: fixed;
-	width: 80%;
-	margin-left: 10%;
+	width: 85%;
 	z-index: 1;
 	background-color: #75a8b4;
 	border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    border-radius: 0;
+    height: 50px;
 }
-.navbar-header {
-	float: right;
+
+.container-fluid {
+	padding: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #FFF;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	border: none;
-}
-.pull-right {
-	display: inline-flex;
-}
-.navbar-header-a {
-	margin-top: 15px;
-	margin-left: 1%;
-}
-.navbar-header-a a {
-	color: #FFF;
-	letter-spacing: 0.1em;
-	opacity: 1;
-	font-family: 'Lucida Grande', 'Lucida', Verdana, sans-serif;
-	font-weight: 100;
-}
-.navbar-inverse .navbar-nav>li>a {
-	opacity: 1;
-	color: #FFF;
-}
-.nav>li>a {
 	padding-top: 15px;
 	padding-bottom: 15px;
-	color: #FFF;
+	line-height: 27px;
 }
-.nav>li>a:hover {
-	height: 51px;
+
+.navbar-default .navbar-nav>li>a:hover {
+	height: 57px;
 	background-color: #FFF;
 	color: #000;
 }
-.glyphicon.glyphicon-earphone {
-	font-size: 1.25em;
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: #FFF;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: 57px;
 }
-a.company-name:hover {
+
+.navbar-default .navbar-toggle {
+	background-color: #FFF;
+	border: none;
+	margin-right: 5%
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	background-color: #75a8b4;
-	text-decoration: none;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
-.navbar-inverse .navbar-nav>li>a:hover {
-	background-color: #FFF;
-	color: #000;
-	text-decoration: none;
+
+.navbar-right {
+	margin-right: 2%;
 }
+
 footer {
 	width: 100%;
 	min-height: 50px;
@@ -106,19 +91,51 @@ footer {
 #footer-company-name {
 	padding-top: 1.5%;
 	padding-bottom: 1.5%;
+	padding-left: 5%;
 }
-.row {
-	margin-right: 15px;
-	margin-left: 15px;
+
+/* media queries */
+
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+	.navbar-form .form-control {
+		width: 548px;
+	}
 }
-.page-header {
-	width: 100%;
-	height: 100px;
-	opacity: 0.6;
-	padding-left: 2%;
-	color: #75a8b4;
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+	.main-body-div {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	nav {
+		height: 400px;
+	}
+
+	.navbar {
+	width: 90%;
+	}
+
+	ul.nav.navbar-nav {
+		width: 100%;
+		margin: 0 0;
+		text-align: center;
+	}
+
+	.nav>li>a {
+		width: 100%;
+	}
+
+	.form-control {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 2%;
 }
-h1 {
-	font-family: Optima, calibri, arial, sans-serif;
-	color: #000;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 414px) {
+	.navbar-default .navbar-toggle {
+	margin-right: 10%
+}
+} 

@@ -5,6 +5,7 @@
 .search_bar {
 	float: right;
 	margin-bottom: 2%;
+	display: inline-block;
 }
 #edit_new_page .form-control {
 	width: 100%;
